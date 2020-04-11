@@ -1,0 +1,62 @@
+<%@page import="com.trungtamjava.model.model.Category" import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" th:href="@{/css/admin/add-category.css}">
+<title>Add</title>
+</head>
+<body>
+	<%
+		Category c = (Category) request.getAttribute("category");
+	%>
+	<div id="header"></div>
+
+	<div id="container">
+		<div class="ground">
+			<div class="forum">
+				<form action="/Maven02/UpdateCategory" method="post">
+					<div class="f1 form-group">
+						<label for="">ID</label> <input class="form-control" name="id"
+							type="number" value="${category.getId()}" placeholder="Enter ID">
+					</div>
+					<div class="f form-group">
+						<label for="">Product Name:</label> <input class="form-control"
+							name="fname" type="text" value="<%= c.getName() %>"
+							placeholder="Enter Product Name">
+					</div>
+					<div class="f1 form-group">
+						<label for="">Price:</label> <input class="form-control"
+							name="price" type="text" value="" placeholder="Enter your price">
+					</div>
+					<div class="f2 form-group">
+						<label for="">Image URL:</label> <input id="ht"
+							class="form-control" name="image" type="text" value=""
+							placeholder="link image">
+					</div>
+					<div class="f9">
+
+						<button type="submit btn btn-primary">Submit</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
