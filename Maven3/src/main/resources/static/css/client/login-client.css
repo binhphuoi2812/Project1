@@ -1,0 +1,98 @@
+body{
+	background-image: url(img/21.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#box{
+	width: 400px;
+	height: 600px;
+	margin: 0px auto;
+	margin-left: 100px;
+	padding-top: 100px;
+	
+}
+.font{
+	position: relative;
+	width: 400px;
+	height: 100px;
+}
+.vna{
+	width: 400px;
+	height: 100px;
+	position: absolute;
+	transition: 1s;
+}
+.vna img{
+	width: 100%;
+	height: 100px;
+	border: 1px solid white;
+	border-radius: 5px;
+	
+}
+.welcome{
+	width: 400px;
+	height: 100px;
+	opacity: 0;
+	transition: 1s;
+	position: absolute;
+}
+.welcome img{
+	width: 100%;
+	height: 100px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.font:hover .welcome {
+opacity: 1;
+}
+
+
+.forum{
+	padding-top: 10px;
+}
+#header{
+	width: 100%;
+    height: 50px;
+	background-color: black;
+	position: relative;
+}
+.nation{
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.image img{
+	
+	width: 100%;
+	height: 30px;
+}
+.thumb{
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	
+	display: flex;
+}
+.img1 img{
+width: 200px;
+height: 50px;
+}
+.img2 img{
+	width: 100px;
+	height: 50px;
+}
+.f9{
+	padding-top: 10px;
+}
+.f9 button {
+	
+	border: 1px solid black;
+	border-radius: 5px;
+}
+label{
+	color: white;
+}
+
+

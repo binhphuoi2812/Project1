@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="ThemeClient/index.css">
+<title>CSS</title>
+</head>
+<body>
+	<%
+		
+	%>
+	<div id="header">
+		<div class="logo">
+			<div class="thumb">
+				<div class="img2">
+					<a href=""><img src="ThemeClient/img/6.png" alt=""></a>
+				</div>
+				<div class="img1">
+					<a href=""><img src="ThemeClient/img/7.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="nation">
+			<div class="image">
+				<img src="ThemeClient/img/3.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="box">
+		<div class="font">
+			<div class="vna">
+				<a href=""><img src="ThemeClient/img/20.jpg" alt=""></a>
+			</div>
+			<div class="welcome">
+				<a href=""><img src="ThemeClient/img/9.png"></a>
+			</div>
+		</div>
+		<div class="forum">
+		    <p>{ErrMsg}</p>
+			<form action="/Maven02/DangNhapClient" method="post">
+				<div class="f form-group">
+					<label for="">Username:</label> <input id="ht" class="form-control"
+						name="Username" type="name" value="" placeholder="Nhap vao username">
+				</div>
+
+				<div class="f2 form-group">
+					<label for="">Password:</label> <input class="form-control"
+						name="matkhau" type="password" value=""
+						placeholder="Nhap vao password">
+				</div>
+				<div >
+					<input type="submit" value="Login">
+					<input type="submit" value="Create">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

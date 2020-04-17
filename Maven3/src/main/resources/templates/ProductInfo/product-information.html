@@ -1,0 +1,248 @@
+<%@page import="model.Product" import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" th:href="@{/css/admin/product-information.css}">
+	<link rel="stylesheet" th:href="@{/js/product-information.js}">
+		<link rel="stylesheet" th:href="@{/css/admin/product-info-layer.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <link rel="stylesheet" th:href="/css/admin/product-info/font/fontawesome-free-5.9.0-web/css/fontawesome.min.css}">
+	 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{owlcarousel/assets/owl.carousel.min.css}">
+    <link rel="stylesheet" th:href="@{owlcarousel/assets/owl.theme.default.min.css}">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="owlcarousel/main.js"></script>		
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>					
+</head>
+<body >
+<div class="container1">
+	<div class="navbar1">
+		<div class="thumb">
+			<img th:src="@{/img/product-info2.img/images.jfif}" alt="">
+		</div>
+
+    <div class="pos-f-t">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+          <a href="" style="list-style: none; color: white;">Dashboard</a>
+
+  </nav>
+</div>
+
+		<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+
+	<div class="menutop">
+		
+<ul>
+	<li><div class="_1item">
+		
+		<a href="/Final/Dashboard" class="layer1">HOME</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="" class="layer1">ABOUT US</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="/Final/CategoryForm" class="layer1">CATEGORY</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="/Final/SearchProduct">FRUIT</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="" class="layer1">FOOTWEAR</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="" class="layer1">ACCESSORIES</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="" class="layer1">JERSEYS</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+
+</ul>
+	</div>
+	</div>
+
+
+	<div class="navbar2">
+		<div class="line1">
+			<span>Products</span>
+		</div>
+		<div class="groupbt">
+		<div class="btn-group pdl">
+        <button type="button" class="btn btn-info dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        </div>
+		
+       <nav class="navbar navbar-light bg-light pdl">
+         <form class="form-inline" action="/Final/SearchProduct" method="get">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="fname">
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         </form>
+       </nav>
+
+       <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View All
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        </div>
+         
+         <nav aria-label="..." class="pag">
+  <ul class="pagination ">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+        </div>
+	<%
+				List<Product> products = (List<Product>) request.getAttribute("productlist");
+			%>
+<div class="productdetail">
+<c:forEach items="${productlist}" var ="p">
+
+		
+					
+	<div class="card" style="width: 18rem;">
+  <img class="card-img-top" th:src="@{/img/product-info.img/20.jpg}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">${p.name}</h5>
+    <p class="card-text">Trai cay nhap khau tu vuon trai cay tai hokkaido</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><span>30.000 VND</span><br>27.400 VND</li>
+    <li class="list-group-item">Discount:15%</li>
+    <li class="list-group-item">Made in Japan</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Buy</a>
+    <a href="/Final/add-to-cart?pid=${p.id}" class="card-link">Add to cart</a>
+  </div>
+</div>
+</c:forEach>
+
+</div>
+
+
+
+	</div>
+</div>
+<div class="footer">
+	<p>© Copyright 2019 Fanatics (International) Ltd, Company No. 5933624 whose registered office is at Greengate, Middleton, Manchester, M24 1FD</p>
+</div>
+</body>
+
+ 
+					
+</html>

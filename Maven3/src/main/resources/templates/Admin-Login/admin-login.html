@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link th:href="@{/css/admin/admin-login.css}" rel="stylesheet"
+	type="text/css" media="all" />
+<title>CSS</title>
+</head>
+<body>
+
+	<div id="header">
+		<div class="logo">
+			<div class="thumb">
+				<div class="img2">
+					<a href=""><img th:src="@{/img/admin4.img/6.png}" alt=""></a>
+				</div>
+				<div class="img1">
+					<a href=""><img th:src="@{/img/admin4.img/7.png}" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="nation">
+			<div class="image">
+				<img th:src="@{/img/admin4.img/3.png}" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="box">
+		<div class="font">
+			<div class="vna">
+				<a href=""><img th:src="@{/img/admin4.img/8.png}" alt=""></a>
+			</div>
+			<div class="welcome">
+				<a href=""><img th:src="@{/img/admin4.img/9.png}"></a>
+			</div>
+		</div>
+		<div class="forum">
+		    <p>{ErrMsg}</p>
+			<form th:action="@{/login-admin}" method="post">
+				<div class="f form-group">
+					<label for="">Username:</label> <input id="ht" class="form-control"
+						name="Username" type="name" value="" placeholder="Nhap vao username">
+				</div>
+
+				<div class="f2 form-group">
+					<label for="">Password:</label> <input class="form-control"
+						name="matkhau" type="password" value=""
+						placeholder="Nhap vao password">
+				</div>
+				<div >
+					<input type="submit" value="Login">
+					<input type="submit" value="Create">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link th:href="@{/css/admin/add-admin-update.css}" rel="stylesheet"
+	type="text/css" media="all" />
+<title>Add</title>
+</head>
+<body>
+	<div id="header"></div>
+
+	<div id="container">
+		<div class="ground">
+			<div class="forum">
+				<form th:action="@{/admin/user/add}" method="post" modelattribute="useradd"
+		enctype="multipart/form-data">
+					<div class="f form-group">
+						<label for="">First Name:</label> <input class="form-control"
+							name="fname" type="text" value=""
+							placeholder="Enter your First Name">
+					</div>
+					<div class="f1 form-group">
+						<label for="">Role:</label> <input class="form-control"
+							name="role" type="text" value=""
+							placeholder="Enter your Role">
+					</div>
+					<div class="f2 form-group">
+						<label for="">Imageurl:</label> <input id="ht" class="form-control"
+							name="imageurl" type="text" value="" placeholder="Nhap vao imageUrl">
+					</div>
+
+				
+					<div class="f9">
+
+						<button type="submit btn btn-primary">Submit</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

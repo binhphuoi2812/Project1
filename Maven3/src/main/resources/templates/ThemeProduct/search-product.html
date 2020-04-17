@@ -1,0 +1,251 @@
+<%@page import="com.trungtamjava.model.model.Product" import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="ThemeProduct/index.css">
+	<link rel="stylesheet" href="ThemeProduct/index.js">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <link rel="stylesheet" href="font/fontawesome-free-5.9.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="owlcarousel/main.js"></script>		
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>					
+</head>
+<body >
+<div class="container1">
+	<div class="navbar1">
+		<div class="thumb">
+			<img src="ThemeProduct/img1/images.jfif" alt="">
+		</div>
+
+    <div class="pos-f-t">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+          <a href="" style="list-style: none; color: white;">Dashboard</a>
+
+  </nav>
+</div>
+
+		<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+
+		<div class="menutop">
+		
+<ul>
+	<li><div class="_1item">
+		
+		<a href="/Final/Search" class="layer1">ADMIN ACCOUNT</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="/Maven02/SearchClient" class="layer1">CLIENT ACCOUNT</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="/Maven02/SearchCategory" class="layer1">CATEGORY</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="/Maven02/SearchProduct">FRUIT</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="/Maven02/SearchProduct" class="layer1">PRODUCTS</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="" class="layer1">FINANCE</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+	<li><div class="_1item">
+		
+		<a href="" class="layer1">OTHER</a>	
+		
+		<div class="layer2">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+	</div></li>
+
+</ul>
+	</div>
+
+	</div>
+
+
+	<div class="navbar2">
+		<div class="line1">
+			<span>Products</span>
+		</div>
+		<div class="groupbt">
+		<button type="button" class="btn btn-outline-info "><a href="/Maven02/AddProduct">Add</a></button>
+		<button type="button" class="btn btn-outline-info pdl">Delete</button>
+		<div class="btn-group pdl">
+        <button type="button" class="btn btn-info dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        </div>
+		<%
+				List<Product> products = (List<Product>) request.getAttribute("productlist");
+			%>
+       <nav class="navbar navbar-light bg-light pdl">
+         <form class="form-inline" action="/Maven02/SearchProduct" method="get">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="fname">
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         </form>
+       </nav>
+
+       <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View All
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        </div>
+         
+         <nav aria-label="..." class="pag">
+  <ul class="pagination ">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+        </div>
+         
+         <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Image</th>
+      <th scope="col">Description</th>
+      <th scope="col">Category</th>
+      <th scope="col">More Option</th>
+      
+    </tr>
+  </thead>
+ <c:forEach items="${productlist}" var ="p">
+
+							<tr>
+								<th scope="row">${p.getId()}</td>
+								<td>${p.name}</td>
+								<td>${p.getPrice()}</td>
+						        <td>${p.getImage()}</td>
+								<td>${p.getDescription()}</td>
+							    <td>${p.getCategory().getName()}</td>
+								
+								<td><a href="/admin/product/update-product?id=${p.getId()}">Update</a>
+									<a href="/admin/product/delete?id=${p.getId()}">Delete</a>
+									
+								</td>
+							</tr>
+					</c:forEach>
+</table>
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
