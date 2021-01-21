@@ -1,0 +1,163 @@
+@import '~assets/styles/colors';
+
+.list-product {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .product-item {
+    width: 23%;
+    height: auto;
+
+    @media (max-width: 991px) {
+     width: 48%;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+     }
+  }
+}
+
+.list-product-carousel {
+  // width: 100%;
+  // height: auto;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+
+}
+
+.alice-carousel {
+  position: relative;
+
+  &__next-btn {
+    width: 10% !important;
+    height: 50px;
+    position: absolute;
+    top: 90px;
+    right: -100px;
+
+    span {
+      display: block;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      background-image: url('https://img.favpng.com/20/17/15/arrow-computer-icons-right-angle-symbol-png-favpng-fBNaDAKDtTemFRkSr9bb68eR7.jpg');
+      background-size: cover;
+    }
+
+
+  }
+
+  &__prev-btn {
+    width: 10% !important;
+    height: 50px;
+    position: absolute;
+    top: 90px;
+    left: -120px;
+
+    span {
+      display: block;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      background-image: url('https://img.favpng.com/3/23/16/font-awesome-right-angle-computer-icons-png-favpng-bXfYwgu59aEAbd2NN2cRFR9Vn_t.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+
+  }
+
+  .alice-carousel__dots {
+    display: none !important;
+  }
+}
+
+
+.product-item {
+  width: 90%;
+  height: auto;
+}
+
+.product {
+  padding-bottom: 15px;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 4rem;
+
+  @media (max-width: 575px) {
+    &:nth-of-type(odd) {
+      padding-right: 7.5px;
+    }
+
+    &:nth-of-type(even) {
+      padding-left: 7.5px;
+    }
+  }
+
+  &:hover .product-image:before {
+    opacity: 1;
+    font-family: sans-serif;
+  }
+
+  .product-image {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      opacity: 0;
+      transition: .3s ease;
+      border: 1px solid $primary;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .product-price {
+    margin: 1.5rem 0 1rem;
+
+    .del {
+      margin-left: 2rem;
+    }
+  }
+
+  .product-title {
+    margin-bottom: 15px;
+    line-height: 2.5rem;
+  }
+
+  .price-status {
+    color: $primary;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid $primary;
+    display: inline;
+    padding: 2px 8px;
+    font-weight: bold;
+    font-size: 12px;
+    user-select: none;
+
+    &.active {
+      color: $white;
+      background: $primary;
+      letter-spacing: 0px;
+      padding: 2px 12px;
+    }
+  }
+}
+
+.alice-carousel {}

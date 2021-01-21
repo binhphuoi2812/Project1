@@ -1,0 +1,57 @@
+.rs-notification {
+  width: 250px;
+}
+.rs-notification-item-content {
+  background: #191B21;
+  min-width: 200px;
+  .rs-notification-title-with-icon {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.rs-modal-backdrop {
+  background: #000;
+}
+
+.rs-modal-content {
+  background: #191B21;
+}
+
+.rs-modal-title {
+  color: #fff !important;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 1rem;
+    width: 2rem;
+  }
+}
+
+.rs-modal-header-close::before {
+  color: #fff;
+}
+
+.rs-form {
+  .rs-control-label {
+    color: #fff !important;
+  }
+
+  .rs-form-control-wrapper {
+    width: 95%;
+
+    .rs-help-block-tooltip {
+      vertical-align: middle;
+    }
+  }
+  input {
+    width: 95%;
+    border: none;
+    color: #000;
+  }
+}

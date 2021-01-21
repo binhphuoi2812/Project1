@@ -1,0 +1,40 @@
+@import '~assets/styles/colors';
+
+.homepage-carousel {
+  @media (max-width: 991px) {
+    margin-top: 37px;
+  }
+  position: relative;
+  .alice-carousel__dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    .alice-carousel__dots-item {
+      width: 10px;
+      height: 10px;
+      background: $white;
+      &.__active {
+        background: $primary;
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &.carousel-next {
+      right: 20px;
+    }
+    &.carousel-prev {
+      left: 20px;
+    }
+    img {
+      width: 2rem;
+    }
+  }
+}

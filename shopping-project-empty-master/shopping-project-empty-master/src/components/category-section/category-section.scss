@@ -1,0 +1,21 @@
+.category-section {
+    
+    &__new {
+      &-main {
+          width: 100%;
+          height: auto;
+         
+      }
+    }
+  }
+
+  .section-wrap {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+  
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
+  }

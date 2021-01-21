@@ -1,0 +1,25 @@
+.header {
+  padding: 1rem 4rem;
+  background: #191B21;
+
+  .header-item {
+    font-size: 1.8rem;
+    color: #fff;
+    img {
+      width: 3.5rem;
+      margin-right: 1.5rem;
+    }
+    
+    button {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      img {
+        width: 2rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

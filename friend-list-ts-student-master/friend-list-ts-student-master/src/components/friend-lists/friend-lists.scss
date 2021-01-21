@@ -1,0 +1,26 @@
+.list-friends {
+  padding: 4rem;
+  .list-null {
+    width: 100%;
+    min-height: calc(100vh - 13.6rem);
+    p {
+      color: #fff;
+      font-size: 2.4rem;
+    }
+    img {
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.filter-friends {
+  margin-left: 5rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  width: 47rem;
+  background: #191B21;
+  color: white;
+  border: 1px solid violet;
+  border-radius: 3px;
+}

@@ -1,0 +1,121 @@
+@import 'react-alice-carousel/lib/scss/alice-carousel.scss';
+@import '~assets/styles/colors';
+@import '~assets/styles/fonts';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  font-size: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  font-family: 'Barlow', sans-serif;
+  transition: .3s ease;
+  font-size: 14px;
+  color: $black;
+  font-weight: 500;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.section-wrap {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+}
+
+.title-group {
+  font-size: 14px;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  color: $black;
+}
+
+p {
+  font-size: 14px;
+}
+
+.title-block {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: $primary;
+  margin: 3.5rem 0;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.price,
+.product-title {
+  font-size: 14px;
+  color: $black;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.price {
+  font-family: 'Nunito', sans-serif;
+  color: $primary;
+  &.del {
+    color: $black;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,314 @@
+@import '~assets/styles/colors';
+
+.product-detail {
+  border-top: 1px solid $gray-light;
+  padding: 1rem 0;
+
+  .see-all {
+    display: none;
+  }
+
+  .quick-link {
+    @media (max-width: 991px) {
+      margin-top: 5rem;
+    }
+
+    margin-bottom: 2rem;
+
+    a {
+      font-size: 16px;
+      position: relative;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+
+      &:not(:first-of-type) {
+        &:before {
+          content: '-';
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .product-main {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+
+    .product-item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      height: auto;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
+      &:nth-of-type(1) {
+
+        margin: 0 -15px 0 -30px;
+        padding-right: 30px;
+
+        @media (max-width: 991px) {
+          padding: 0;
+          margin: 0 -15px;
+        }
+      }
+
+      &:nth-of-type(2) {
+
+        margin: 0 -30px 0 -15px;
+        padding-left: 30px;
+
+        @media (max-width: 991px) {
+          padding: 0 15px;
+          margin: 0 -15px;
+        }
+      }
+
+      .tab {
+        border: 1px solid $primary;
+        width: 100%;
+
+        .tab-header {
+          display: flex;
+
+          .tab-item {
+            flex: 0 0 50%;
+            max-width: 50%;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid $primary;
+            transition: .3s ease;
+            color: $primary;
+            background: $white;
+            padding: 8px 10px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: 600;
+
+            &:hover,
+            &.active {
+              color: $white;
+              background: $primary;
+            }
+          }
+        }
+
+        .tab-main {
+          padding-top: 10px;
+
+          .tab-item {
+            display: none;
+
+            &.active {
+              display: block;
+            }
+
+            img {
+              width: 100%;
+            }
+
+            .line {
+              width: 95%;
+              margin: 0 auto;
+              padding: 10px;
+              display: flex;
+
+              &:not(:last-of-type) {
+                border-bottom: 1px solid $primary;
+              }
+
+              h4,
+              p {
+                font-size: 1.6rem;
+                flex: 0 0 50%;
+                max-width: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .product-image {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+
+        &:first-of-type {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .title {
+        font-size: 2.7rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+
+      .product-status {
+        font-size: 2rem;
+        padding: 3px 12px;
+        border: 2px solid $primary;
+        color: $primary;
+        font-weight: bold;
+        display: inline;
+      }
+
+      .price {
+        margin: 2rem 0;
+        color: $black;
+        font-size: 2.4rem;
+      }
+
+      h6 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+
+        span {
+          color: $gray;
+        }
+      }
+
+      .size {
+        margin-bottom: 2rem;
+
+        .size-block {
+          width: 40px;
+          height: 40px;
+          font-size: 16px;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid $primary;
+          margin-right: 8px;
+          font-weight: 600;
+
+          &:hover,
+          &.active {
+            background: $primary;
+            color: $white;
+            cursor: pointer;
+          }
+
+          &.out-of-stock {
+            position: relative;
+            pointer-events: none;
+
+            &:before {
+              position: absolute;
+              content: '';
+              width: 1px;
+              height: 55px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(45deg);
+              content: '';
+              background: $primary;
+            }
+          }
+        }
+      }
+
+      .amount {
+        margin-bottom: 2rem;
+
+        span {
+          line-height: 35px;
+          user-select: none;
+          height: 35px;
+          font-size: 18px;
+          text-align: center;
+          display: inline-block;
+
+          &.plus,
+          &.minus {
+            width: 35px;
+            color: $primary;
+            border: 1px solid $primary;
+            cursor: pointer;
+          }
+
+          &.value {
+            width: 50px;
+            border-top: 1px solid $primary;
+            border-bottom: 1px solid $primary;
+          }
+        }
+      }
+
+      .other-product {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .other-product-item {
+          position: relative;
+          margin-bottom: 30px;
+          width: 160px;
+          height: 160px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          &:hover:before {
+            opacity: 1;
+          }
+
+          &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            border: 1px solid $primary;
+            box-shadow: inset 0 0 0 3px $white;
+            transition: .3s ease;
+            opacity: 0;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .endow {
+        .endow-item {
+          align-items: flex-start;
+          margin-bottom: 1.5rem;
+
+          img {
+            width: 30px;
+            margin-right: 10px;
+          }
+
+          p {
+            font-size: 16px;
+            font-weight: 600;
+
+            span {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
