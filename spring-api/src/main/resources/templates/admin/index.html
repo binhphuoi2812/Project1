@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorator="admin/common/template">
+<head>
+<meta charset="utf-8">
+<title>React Course</title>
+</head>
+<body>
+	<div layout:fragment="content" th:remove="tag">
+		<div class="container">
+			<div class="row" style="margin-bottom: 20px; margin-top: 20px;"
+				sec:authorize="hasAnyRole('ROLE_ADMIN')">
+				<div class="col-4">
+					<div class="card h-100">
+						<a th:href="@{/admin/category/list}"><img
+							style="padding: 15px;" class="card-img-top"
+							th:src="@{/user/images/userGroup1.png}"></a>
+						<div class="card-body" style="padding: 0.72rem;">
+							<h5 class="card-title"
+								style="text-align: center; font-size: 14px; font-style: oblique;">
+								<a th:href="@{/admin/category/list}">Danh Mục</a>
+							</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card h-100">
+						<a th:href="@{/admin/accounts}"><img style="padding: 15px;"
+							class="card-img-top" th:src="@{/user/images/user.png}"></a>
+						<div class="card-body" style="padding: 0.72rem;">
+							<h5 class="card-title"
+								style="text-align: center; font-size: 14px; font-style: oblique;">
+								<a style="" th:href="@{/admin/accounts}">Người dùng</a>
+							</h5>
+							<p class="card-text"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card h-100">
+						<a th:href="@{/admin/post/list}"><img style="padding: 15px;"
+							class="card-img-top" th:src="@{/user/images/thongbao.png}"></a>
+						<div class="card-body" style="padding: 0.72rem;">
+							<h5 class="card-title"
+								style="text-align: center; font-size: 14px; font-style: oblique;">
+								<a style="" th:href="@{/admin/post/list}">Bài Viết</a>
+							</h5>
+							<p class="card-text"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 20px; margin-top: 20px;"
+				sec:authorize="hasAnyRole('ROLE_ADMIN')"></div>
+
+		</div>
+	</div>
+</body>
+</html>
