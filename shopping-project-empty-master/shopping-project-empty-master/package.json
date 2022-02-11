@@ -15,7 +15,7 @@
     "husky": "^4.2.3",
     "jquery": "^3.5.1",
     "lint-staged": "^10.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.31",
     "prettier": "^2.0.2",
     "react": "^16.13.1",
